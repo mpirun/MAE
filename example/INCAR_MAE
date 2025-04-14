@@ -1,0 +1,54 @@
+# Startparameter for this run:
+   PREC   = A   
+   ISTART =      0   
+ICHARG =  11   
+ISPIN  =  2                             
+LSORBIT = T                                 
+LNONCOLLINEAR = .TRUE.                      
+MAGMOM = 24*0 0 0 2 0 0 2                 
+SAXIS= 0 0 1                                
+GGA_COMPAT=.FALSE.                          
+ISYM   = -1                                 
+LORBMOM=.TRUE                               
+NBANDS= 120
+   
+#  Electronic Relaxation 
+   ENCUT  = 500   
+   NELM   =  200
+   EDIFF  =  1E-07    
+   LREAL  =      F   
+   
+# Ionic relaxation 
+   EDIFFG = -1.0E-03  
+   NSW    =    0  
+   IBRION =      -1   
+   ISIF   =      3   
+#  ISYM   =     2 
+   POTIM  = 0.1000   
+ ADDGRID = T
+ 
+# DOS related values:
+   ISMEAR =     0
+   SIGMA  =   0.10  
+# Electronic relaxation 2 (details)
+  ALGO     =  Fast 
+# IALGO  =   38   # algorithm
+# Write flags
+   LWAVE  =      F   # write WAVECAR
+   LCHARG =      F   # write CHGCAR
+#  LORBIT =      11   
+
+LDAU=.TRUE.
+LDAUTYPE=2
+LDAUL= -1 -1 2 
+LDAUU=0 0 2
+LDAUJ=0 0 0
+LMAXMIX = 4           
+AMIX = 0.2        
+BMIX = 0.0001 
+AMIX_MAG = 0.8
+BMIX_MAG = 0.0001
+
+LVDW = .T.
+IVDW=12
+#IOPTCELL = 1 1 0 1 1 0 0 0 0 
